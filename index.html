@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Get Posts API</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div id="app">
+    <h1>Get Posts API</h1>
+    <h3>API - picsum.photo/v2/list</h3>
+    <div class="content-app">
+        <img :src="result.download_url"  v-for="result in results">
+    </div>
+        <!-- <div class="title">{{ result.title }}</div>
+        <div class="descrict">{{ result.body }}</div> -->
+      </div>
+    </div>
+  </div>
+  <!--build:js js/main.min.js -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
